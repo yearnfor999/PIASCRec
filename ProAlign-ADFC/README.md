@@ -1,6 +1,6 @@
 # ProAlign-ADFC
 
-This repository provides the implementation of ProAlign for sequential recommendation.
+This repository provides the implementation of PIASCRec, a LLM-enhanced sequential recommendation framework with prospective intent alignment and prototype-guided semantic continuity modeling.
 
 ## Environment
 
@@ -17,13 +17,25 @@ scikit-learn       1.8.0
 
 ## Data
 
-Place the processed Beauty dataset under:
+Download the processed Beauty dataset from [Google Drive](https://drive.google.com/drive/folders/1hpio5NyfsEXC3_IidBAssGTYxhl-3aiR?usp=drive_link), and place it under:
 
 ```text
 data/Beauty/
 ```
 
-The folder should contain the processed `.df` files and the LLM intent embeddings used by the model.
+The folder should contain the processed data files and LLM intent embeddings:
+
+```text
+data/Beauty/
++-- train_data.df
++-- val_data.df
++-- test_data.df
++-- data_statis.df
++-- usr_intent_emb.pkl
++-- itm_intent_emb.pkl
++-- sim_user_100.pkl
+`-- 3large_emb.pickle
+```
 
 ## Run
 
